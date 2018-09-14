@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSound: {fileID: 736757636}
-  StartMusic: {fileID: 0}
+  mainMusic: {fileID: 1941110671}
   scoreText: {fileID: 797640402}
   timeText: {fileID: 2128341772}
   gameLength: 3
