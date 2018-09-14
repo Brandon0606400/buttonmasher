@@ -84,6 +84,9 @@ public class buttonMasher : MonoBehaviour {
             //reset the score
             score = 0;
 
+            // update visual score
+            scoreText.text = score.ToString();
+
         } //End of game else
     } // End of OnMouseDown
 
