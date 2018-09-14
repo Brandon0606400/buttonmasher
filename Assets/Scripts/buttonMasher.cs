@@ -6,6 +6,7 @@ public class buttonMasher : MonoBehaviour {
 
     // Data for our class
     public AudioSource clickSound; // sound that will play when we click
+    public AudioSource mainMusic; // sound that will play when we click
     public TextMesh scoreText; // display text for the player's score
     public TextMesh timeText; // display text for the player's time
     public float gameLength; // how many seconds the game will last
@@ -39,6 +40,8 @@ public class buttonMasher : MonoBehaviour {
             if (gameRunning == true)
             {
                 Debug.Log("Attempting to play game over");
+
+                mainMusic.Stop();
 
                 // play the game over sound
                 gameOverSound.Play();
@@ -75,6 +78,8 @@ public class buttonMasher : MonoBehaviour {
         {
             //game is not running and we click the button
             gameRunning = true;
+
+            mainMusic.Play();
 
             //Set the timer to the full length of the game
             timeRemaining = gameLength;
